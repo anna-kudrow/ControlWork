@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="1aKmvzn89xCvgq3HuIkQ" name="Page-1">
+        <mxGraphModel dx="1233" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Animal&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#FF00FF;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="10" width="200" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Pack Animal" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="180" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Pet" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;fillColor=#e6d0de;strokeColor=#996185;gradientColor=#d5739d;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Cat" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;gradientColor=#d5739d;fillColor=#e6d0de;strokeColor=#996185;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Dog" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;gradientColor=#d5739d;fillColor=#e6d0de;strokeColor=#996185;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="280" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Hamster" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;gradientColor=#d5739d;fillColor=#e6d0de;strokeColor=#996185;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="280" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Horse" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;gradientColor=#d5739d;fillColor=#e6d0de;strokeColor=#996185;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="280" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Donkey" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;gradientColor=#d5739d;fillColor=#e6d0de;strokeColor=#996185;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="280" width="90" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Camel" style="rounded=0;whiteSpace=wrap;html=1;fontSize=25;gradientColor=#d5739d;fillColor=#e6d0de;strokeColor=#996185;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="280" width="80" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
