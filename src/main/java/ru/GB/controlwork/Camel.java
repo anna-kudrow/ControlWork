@@ -1,12 +1,13 @@
 package ru.GB.controlwork;
 
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
-public class Camel extends PackAnimal{
+public class Camel extends PackAnimal implements Skills{
 
 
-    public Camel(String type, String name, LocalDate birthday, List<String> commands) {
+    public Camel(String type, String name, Date birthday, List<String> commands) {
         super(type, name, birthday, commands);
     }
 }
