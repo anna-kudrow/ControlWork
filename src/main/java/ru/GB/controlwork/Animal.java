@@ -1,14 +1,9 @@
 package ru.GB.controlwork;
 
-import java.io.IOException;
-import java.time.LocalDate;
-import java.util.Date;
-import java.util.InputMismatchException;
-import java.util.List;
-import java.util.Scanner;
-
-import static java.lang.System.in;
-import static java.lang.System.setOut;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public abstract class Animal {
 
@@ -19,6 +14,8 @@ public abstract class Animal {
     public static int getCounter(){
         return counter;
     }
+
+
 
     public String getName() {
         return name;
@@ -42,13 +39,14 @@ public abstract class Animal {
         this.birthday = birthday;
         this.commands = commands;
     }
-    public static Scanner in;
+//    public static Scanner in;
+    Scanner sc = new Scanner(System.in);
 
 
     public void educate(Animal animal) {
         String newCommand;
         System.out.println("What the command does it know now?: ");
-        newCommand = in.toString();
+        newCommand = sc.toString();
         animal.commands +=  ", " + newCommand;
     }
     public void showSkills(){
@@ -56,17 +54,33 @@ public abstract class Animal {
     }
 
 
-    public static void addNewAnimal() {
-//        Scanner sc = new Scanner(in);
-        String name = "", type = "";
-        String bday = "";
-        String commands = "";
+    public static void addNewAnimal(ArrayList<Animal> animals) throws ParseException {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.println("Input type of animal: ");
+        String type = "";
+        type = sc.nextLine();
+//        Scanner sc = new Scanner(in);
+        String name = "";
+//        String bday = "";
+        String commands = "";
         System.out.println("Enter name: ");
-        name = in.nextLine();
+        name = sc.nextLine();
         System.out.println("Enter bday: ");
-        bday = in.next();
+        String input = sc.nextLine();
+        DateFormat formatter = new SimpleDateFormat("yyyy.MM.dd");
+        Date bday = formatter.parse(input);
         System.out.println("Enter commands: ");
-        commands = in.nextLine();
+        commands = sc.nextLine();
+        if (type.equalsIgnoreCase("cat, dog, hamster")) {
+            Pet pet = new Pet(name, bday, commands);
+            animals.add(pet);
+        }
+        if (type.equalsIgnoreCase("horse, camel, donkey")) {
+            PackAnimal packAnimal = new PackAnimal(name, bday, commands);
+            animals.add(packAnimal);
+        }
+
     }}
+
 

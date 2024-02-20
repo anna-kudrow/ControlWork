@@ -1,13 +1,16 @@
 package ru.GB.controlwork;
 
+import java.text.ParseException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Program {
-    public static void main(String[] args) {
-     Dog dog1 = new Dog("jjikj", new Date(2020,1,1),"pow, sit");
-     dog1.showSkills();
+    public static void main(String[] args) throws ParseException {
+
+     ArrayList<Animal> allAnimals = new ArrayList<Animal>();
+     Animal.addNewAnimal(allAnimals);
+
 
 
 
