@@ -7,7 +7,7 @@ import java.util.List;
 public class PackAnimal extends Animal{
 
 
-    public PackAnimal(String name, Date birthday, String commands) {
-        super(name, birthday, commands);
+    public PackAnimal(String type, String name, Date birthday, String commands) {
+        super(type, name, birthday, commands);
     }
 }

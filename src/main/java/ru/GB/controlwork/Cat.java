@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Cat extends Pet implements Skills{
 
-    public Cat(String name, Date birthday, String commands) {
-        super(name, birthday, commands);
+    public Cat(String type, String name, Date birthday, String commands) {
+        super(type, name, birthday, commands);
     }
 }

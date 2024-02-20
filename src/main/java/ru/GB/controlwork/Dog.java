@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.List;
 
 public class Dog extends Pet{
-    public Dog(String name, Date birthday, String commands) {
-        super(name, birthday, commands);
+    public Dog(String type, String name, Date birthday, String commands) {
+        super(type, name, birthday, commands);
     }
 
 
