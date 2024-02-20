@@ -6,10 +6,12 @@ import java.util.Date;
 
 public class Program {
     public static void main(String[] args) {
-//     PackAnimal animal1 = new PackAnimal("PackAnimal", "Vlad", new Date();
+     Dog dog1 = new Dog("jjikj", new Date(2020,1,1),"pow, sit");
+     dog1.showSkills();
 
 
 
-        ArrayList<Animal> animals = new ArrayList<>();
+
+//        ArrayList<Animal> animals = new ArrayList<>();
     }
 }

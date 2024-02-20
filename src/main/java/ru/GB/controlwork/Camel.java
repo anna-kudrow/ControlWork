@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Camel extends PackAnimal implements Skills{
 
-    public Camel(String type, String name, Date birthday, String commands) {
-        super(type, name, birthday, commands);
+    public Camel(String name, Date birthday, String commands) {
+        super(name, birthday, commands);
     }
 }
