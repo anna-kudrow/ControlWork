@@ -21,8 +21,8 @@ public class Program {
                     "Choose from the menu below: \n" +
                     "1 - see the list of animals\n" +
                     "2 - add a new animal\n" +
-                    "3 - see the skills of an animal with its id" +
-                    "4 - educate an animal" +
+                    "3 - see the skills of an animal with its id\n" +
+                    "4 - educate an animal\n" +
                     "5 - exit\n" +
                     "Enter your choice: "
             );

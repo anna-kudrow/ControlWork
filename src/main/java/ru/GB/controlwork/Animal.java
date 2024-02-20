@@ -68,6 +68,7 @@ public abstract class Animal {
                 animal.commands +=  ", " + newCommand;
             }
         }
+        System.out.println("Education was successful!");
     }
     public static void showSkills(ArrayList<Animal> animals){
         Scanner sc = new Scanner(System.in);
