@@ -21,6 +21,7 @@ public abstract class Animal {
 
     {
         counter ++;
+        id = ++idCounter;
     }
 
     public String getType() {
@@ -54,18 +55,32 @@ public abstract class Animal {
     Scanner sc = new Scanner(System.in);
 
 
-    public void educate(int id, ArrayList<Animal> animals) {
+    public static void educate(ArrayList<Animal> animals) {
+        int id;
+        Scanner sc = new Scanner(System.in);
         String newCommand;
+        System.out.println("Enter an animal's id");
+        id = sc.nextInt();
         System.out.println("What the command does it know now?: ");
-        newCommand = sc.toString();
+        newCommand = sc.nextLine();
         for (Animal animal : animals) {
             if (animal.id == id) {
                 animal.commands +=  ", " + newCommand;
             }
         }
     }
-    public void showSkills(){
-        System.out.println("The animal have these skills: " + commands);
+    public static void showSkills(ArrayList<Animal> animals){
+        Scanner sc = new Scanner(System.in);
+        int id;
+        System.out.println("Enter an id of an animal: ");
+        id = sc.nextInt();
+        for (Animal animal : animals) {
+            if (animal.id == id) {
+                System.out.println("The animal has these skills: " + animal.commands);
+            }
+            System.out.println("Sorry, but there is no animal with this id...");
+        }
+
     }
 
 
