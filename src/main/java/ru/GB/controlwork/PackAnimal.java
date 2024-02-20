@@ -10,7 +10,7 @@ public class PackAnimal extends Animal{
         super(type, name);
     }
 
-    public PackAnimal(String type, String name, Date birthday, List<String> commands) {
+    public PackAnimal(String type, String name, Date birthday, String commands) {
         super(type, name, birthday, commands);
     }
 }
