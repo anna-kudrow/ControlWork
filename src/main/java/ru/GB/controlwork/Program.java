@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) throws ParseException {
 
-     ArrayList<Animal> allAnimals = new ArrayList<Animal>();
+        ArrayList<Animal> allAnimals = new ArrayList<Animal>();
 //     Animal.addNewAnimal(allAnimals);
 //     Animal.showAllAnimals(allAnimals);
 //     dog.showSkills();
@@ -32,10 +32,15 @@ public class Program {
                 case 2 -> Animal.addNewAnimal(allAnimals);
                 case 3 -> Animal.showSkills(allAnimals);
                 case 4 -> Animal.educate(allAnimals);
-                case 5 -> {System.out.println("Bye-bye!");
-                    return;}
+                case 5 -> {
+                    System.out.println("Bye-bye!");
+                    return;
+                }
             }
 
 
+        }
+//        Animal.addNewAnimal(allAnimals);
+//        Animal.showAllAnimals(allAnimals);
     }
-}}
+}

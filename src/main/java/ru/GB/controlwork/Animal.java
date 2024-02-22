@@ -115,9 +115,10 @@ public abstract class Animal {
         System.out.println("Animal is added!");
     }
 
+
     public static void showAllAnimals(ArrayList<Animal> animals) {
         for (Animal animal : animals) {
-            System.out.println(animal.id + animal.type + animal.name);
+            System.out.println(animal.id +  " - " + animal.type + " " + animal.name);
         }
     }
 }
