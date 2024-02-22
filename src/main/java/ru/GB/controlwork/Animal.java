@@ -104,21 +104,23 @@ public abstract class Animal {
         if (type.contains("dog") || type.contains("cat") || type.contains("hamster")) {
             Pet pet = new Pet(type, name, bday, commands);
             animals.add(pet);
+            System.out.println("Animal is added!");
         }
         if (type.contains("donkey") || type.contains("camel") || type.contains("horse")) {
             PackAnimal packAnimal = new PackAnimal(type, name, bday, commands);
             animals.add(packAnimal);
+            System.out.println("Animal is added!");
         }
         else {
             System.out.println("No this type of anilmal ");
         }
-        System.out.println("Animal is added!");
+
     }
 
 
     public static void showAllAnimals(ArrayList<Animal> animals) {
         for (Animal animal : animals) {
-            System.out.println(animal.id +  " - " + animal.type + " " + animal.name);
+            System.out.println( "Registered animals: \n" + animal.id +  " - " + animal.type + " " + animal.name);
         }
     }
 }
