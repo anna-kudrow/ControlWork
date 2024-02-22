@@ -62,7 +62,7 @@ public abstract class Animal {
         System.out.println("Enter an animal's id");
         id = sc.nextInt();
         System.out.println("What the command does it know now?: ");
-        newCommand = sc.nextLine();
+        newCommand = sc.next();
         for (Animal animal : animals) {
             if (animal.id == id) {
                 animal.commands +=  ", " + newCommand;
@@ -77,9 +77,9 @@ public abstract class Animal {
         id = sc.nextInt();
         for (Animal animal : animals) {
             if (animal.id == id) {
-                System.out.println("The animal has these skills: " + animal.commands);
-            }
-            System.out.println("Sorry, but there is no animal with this id...");
+                System.out.println("The animal with id " + animal.id + " has these skills: " + animal.commands);
+            }else {System.out.println("Sorry, but there is no animal with this id...");}
+
         }
 
     }
@@ -119,8 +119,12 @@ public abstract class Animal {
 
 
     public static void showAllAnimals(ArrayList<Animal> animals) {
+        if (animals.isEmpty()) {
+            System.out.println("There is no registered animals");
+        }
+
         for (Animal animal : animals) {
-            System.out.println( "Registered animals: \n" + animal.id +  " - " + animal.type + " " + animal.name);
+            System.out.println( "---------------------------------------------\nRegistered animals: \n" + animal.id +  " - " + animal.type + " " + animal.name + "\n---------------------------------------------");
         }
     }
 }

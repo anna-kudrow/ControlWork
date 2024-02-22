@@ -17,7 +17,7 @@ public class Program {
 
         while (true) {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Welcome to animal register programm!\n" +
+            System.out.println("---------------------------------------------\nWelcome to animal register programm!\n" +
                     "Choose from the menu below: \n" +
                     "1 - see the list of animals\n" +
                     "2 - add a new animal\n" +
@@ -40,7 +40,5 @@ public class Program {
 
 
         }
-//        Animal.addNewAnimal(allAnimals);
-//        Animal.showAllAnimals(allAnimals);
     }
 }
